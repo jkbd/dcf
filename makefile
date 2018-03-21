@@ -10,3 +10,6 @@ install: dcf
 	install -m 755 dcf $(DESTDIR)$(PREFIX)/bin/
 	install -d $(DESTDIR)/etc/systemd/user/
 	install -m 755 dcf.service $(DESTDIR)/etc/systemd/user/
+
+clean:
+	rm ./dcf
