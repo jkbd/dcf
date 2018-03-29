@@ -7,11 +7,9 @@ declare copyright "2018";
 
 import("stdfaust.lib");
 
-sort(a, b, c, d) = a, c, b, d;
-
 process = par(i, channels,
 	      (_ <: fi.highpass(order, fc)@d, fi.lowpass(order, fc))
-	     ) : sort with {
+	     ) : ro.interleave(channels, 2) with {
   // Stereo speaker setup
   channels = 2;
 
