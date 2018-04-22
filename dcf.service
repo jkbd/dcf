@@ -1,7 +1,5 @@
 [Unit]
 Description=Digital Crossover Filter
-Requires=jackd.service
-After=jackd.service
 
 [Service]
 ExecStart=/usr/bin/dcf
