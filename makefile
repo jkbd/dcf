@@ -3,7 +3,7 @@ ifeq ($(PREFIX),)
 endif
 
 dcf: dcf.dsp
-	faust2jackconsole $<
+	faust2jackconsole -scal -exp10 $<
 
 install: dcf
 	install -d $(DESTDIR)$(PREFIX)/bin/
