@@ -32,13 +32,13 @@ You may enable automatic starting at first login:
 $ systemctl --user enable dcf
 ```
 
-### Performance
+### Performance Example
 
 At a sample rate of 44100 Hz and 64 samples buffersize 200 samples of
 `jack_cpu_load` where taken. The mean values of DSP load in percent
 are:
 
-|             | dcf  | zita-lrx |
-| ----------- | ---- | -------- |
+| input      | dcf  | zita-lrx |
+| ---------- | ---- | -------- |
 | 2 channels | 3.84 | 4.14 |
 | 12 channels | 6.59 | 5.88 |
